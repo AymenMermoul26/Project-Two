@@ -1,0 +1,126 @@
+/* Global Rules  */
+* {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+}
+html {
+      scroll-behavior: smooth;
+}
+body {
+        font-family: "Open Sans", serif;
+        background-color: black;
+}
+ul{
+      list-style: none;
+}
+a {
+      color: #fff;
+      text-transform: capitalize;
+      text-decoration: none;
+}
+.container {
+      padding: 0 15px;
+      margin: 0 auto;
+}
+:root {
+      --main-blue-color: #19c8fa;
+      --main-black-clr: #000;
+}
+/* start Media */
+ /* Small (tablets, 768px and up) */
+@media (min-width: 768px) {
+      .container {
+            width: 750px;
+      }
+  }
+/* Medium  (desktops, 992px and up) */
+@media (min-width: 992px) { 
+      .container {
+            width: 970px;
+      }
+ }
+/* Large (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+      .container {
+            width: 1180px;
+      }
+ }
+/* end Media */
+/* End Global Rules */
+
+/* Start Header Style  */
+header {
+      width: 100%;
+      left: 0;
+      position: absolute;
+      z-index: 2;
+}
+.menu {
+      display: none;
+}
+header .container {
+      display: flex;
+      height: 97px;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+}
+header .container::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 30px);
+      height: 1px;
+      background-color: #b7b7b7;
+      right: 15px;
+      bottom: 0px;
+      
+}
+header .container .logo img {
+height: 40px;
+}
+nav {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+header .container nav ul {
+      display: flex;
+}
+header .container nav ul li a {
+padding: 40px 10px;
+font-size: 14px;
+transition:  .4s;
+display: block;
+z-index: 2;
+position: relative;
+}
+header .container nav ul li a:hover{
+      color: var(--main-blue-color);
+      border-bottom: 1px solid var(--main-blue-color);
+}
+header .container nav ul li .active {
+      color: var(--main-blue-color);
+      border-bottom: 1px solid var(--main-blue-color);
+}
+header .container nav  .form {
+width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+.form i {
+      color: white;
+      position: absolute;
+      font-size: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+}
+
+
+/* End Headeer Style */
