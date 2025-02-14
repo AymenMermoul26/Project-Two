@@ -58,9 +58,10 @@ header {
       position: absolute;
       z-index: 2;
 }
-.menu {
-      display: none;
-}
+.menu { 
+      color: #fff;
+      font-size: 22px;}
+
 header .container {
       display: flex;
       height: 97px;
@@ -87,8 +88,26 @@ nav {
       justify-content: flex-end;
       align-items: center;
 }
-header .container nav ul {
+header nav ul {
       display: flex;
+}
+@media (max-width: 767px){
+      header nav ul {
+            display: none;
+      }
+      header nav .menu:hover + ul {
+            position: absolute;
+            display: flex;
+            top: 100%;
+            flex-direction: column;
+            width: 100%;
+            left: 0;
+            background-color: #00000069;
+      }
+         header nav ul li a {
+            padding-block-end: 15px !important;
+         }
+
 }
 header .container nav ul li a {
 padding: 40px 10px;
@@ -113,6 +132,14 @@ width: 40px;
     margin-left: 30px;
     border-left: 1px solid white;
 }
+@media (min-width: 768px){
+     
+      header nav .menu {
+            display: none;
+           
+      }
+}
+
 .form i {
       color: white;
       position: absolute;
