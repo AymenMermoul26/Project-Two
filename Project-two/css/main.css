@@ -88,8 +88,9 @@ a {
     transform: translateX(-50%);
 }
 .special-heading + p{
-        width: 550px;
+    width: 550px;
     text-align: center;
+    max-width: 100%;
     line-height: 1.8;
     color: #7b7b7b;
     margin: 0 auto 60px auto;
@@ -292,6 +293,39 @@ width: 40px;
 .main-head{
       text-align: center;
 }
+@media (min-width: 767px){
+.services-section .container .serv-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill , minmax(450px,1fr));
+      column-gap: 40px;
+      row-gap: 60px;
+}
+}
 
+.services-section .container .serv-container .box-cont {
+    display: flex;
+}
+@media (max-width: 767px){
+      .services-section .container .serv-container .box-cont {
+            flex-direction: column;
+            text-align: center;
+      }
+      .services-section .container .serv-container .box-cont i {
+        margin: 0 0 30px;      
+      }
+}
+.services-section .container .serv-container .box-cont i {      
+      margin-right: 50px;
+    font-size: 50px;
 
+}
+.services-section .container .serv-container .box-cont .text-cont h4 {
+font-size: 20px;
+    color: var(--main-blue-color);
+    margin-bottom: 25px;
+}
+.services-section .container .serv-container .box-cont .text-cont p {
+          line-height: 2;
+            color: #7b7b7b;
+}
 /* Start Services Section  */
