@@ -305,6 +305,11 @@ width: 40px;
 .services-section .container .serv-container .box-cont {
     display: flex;
 }
+.services-section .container .serv-container .box-cont i {      
+      margin-right: 50px;
+      font-size: 50px;
+
+}
 @media (max-width: 767px){
       .services-section .container .serv-container .box-cont {
             flex-direction: column;
@@ -314,11 +319,7 @@ width: 40px;
         margin: 0 0 30px;      
       }
 }
-.services-section .container .serv-container .box-cont i {      
-      margin-right: 50px;
-    font-size: 50px;
 
-}
 .services-section .container .serv-container .box-cont .text-cont h4 {
 font-size: 20px;
     color: var(--main-blue-color);
