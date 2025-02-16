@@ -330,3 +330,62 @@ font-size: 20px;
             color: #7b7b7b;
 }
 /* Start Services Section  */
+
+/* Start Design Section */
+.design{
+              height: 600px;
+    background-image: url(/images/design-features.jpg);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0;
+    align-items: center;
+}
+.design::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #00000096;
+}
+.design .design-image, .design .design-text{
+      flex: 1;
+    padding: 50px;
+    position: relative;
+}
+.design .design-image {
+      text-align: center;
+}
+@media (max-width: 767px){
+      .design .design-image {
+            display: none;
+      }
+}
+.design .design-image img {
+          position: relative;
+    bottom: -142px;
+}
+.design .design-text  {
+      background-color: var(--transform-clore);
+      color: #fff;
+}
+
+.design .design-text h2 {
+          font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    font-weight: normal;
+}
+.design .design-text ul li {
+      padding: 15px 0;
+      text-transform: capitalize;
+}
+.design .design-text ul li::before {
+      font-family: "Font Awesome 5 Free";
+    content: "\f109";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+/* End  Design Section */
