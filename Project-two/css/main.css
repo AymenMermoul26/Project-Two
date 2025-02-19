@@ -689,86 +689,125 @@ text-transform: capitalize;
     display: block;
     position: relative;
 }
-.my-skills .container .skills .box .skill .nine {
-      width: 90%;
-}
-.my-skills .container .skills .box .skill .nine::before {
-content: '90%';
-position: absolute;
-background-color: #000000;
-color: #fff;
-padding: 3px;
-border-radius: 4px;
-bottom: 125%;
-left: 95%;
-}
-.my-skills .container .skills .box .skill .nine::after {
-content:'';
-position: absolute;
-background-color:transparent;
-height: 0;
-width: 0;
-border-left: 8px solid transparent;
-border-right: 8px solid transparent;
-border-bottom: 8px solid transparent;
-border-top: 8px solid #000;
-left: 98%;
-top: -10px;
-}
-
-.my-skills .container .skills .box .skill .eight{
-      width: 80%;
-}
-.my-skills .container .skills .box .skill .eight::before {
-      content: '80%';
+.my-skills .container .skills .box .skill span::before{
+      content: attr(data-progress);
       position: absolute;
-      background-color: #000000;
+      background-color: #000;
       color: #fff;
-      padding: 3px;
+      padding: 4px;
       border-radius: 4px;
-      bottom: 125%;
       left: 95%;
+      top: -40px;
 }
-.my-skills .container .skills .box .skill .eight::after {
+.my-skills .container .skills .box .skill span::after{
       content: '';
       position: absolute;
-      background-color: transparent;
-      height: 0;
-      width: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-      border-top: 7px solid #000000;
-      left: 98%;
-      top: -10px;
-}
-.my-skills .container .skills .box .skill .seven {
-      width: 75%;
-}
-.my-skills .container .skills .box .skill .seven::before {
-      content: '75%';
-position: absolute;
-background-color: #000000;
-color: #fff;
-padding: 3px;
-border-radius: 4px;
-bottom: 125%;
-left: 95%;
-}
-
-.my-skills .container .skills .box .skill .seven::after {
-          content: '';
-    position: absolute;
-    background-color: transparent;
-    height: 0;
-    width: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-top: 7px solid #000;
-    left: 98%;
-    top: -10px;
-}
+      border-style: solid;
+      border-color: #000 transparent transparent transparent;
+      border-width: 10px;
+      top: -15px;
+      right: -10px;
 }
 
 /* End My Skills Section  */
+
+/* Start Quote Section  */
+.quote {
+      background-image: url(/images/quote.jpg);
+      position: relative;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+}
+.quote::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #00000096;
+      top: 0;
+      left: 0;
+}
+.quote .container {
+      position: relative;
+}
+.quote .container .quote-text q{
+      font-size: 30px;
+      margin-bottom: 25px;
+      display: block;
+}
+.quote .container .quote-text p {
+      text-transform: capitalize;
+}
+/* End Quote Section  */
+
+/* Start Praicing section  */
+.praicing-section .container .praic-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+}
+.praicing-section .container .praic-container .praic-box{
+background-color: #f8f8f8;
+text-align: center;
+}
+.praicing-section .container .praic-container .praic-box .header{
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid var(--main-blue-color);
+      border-bottom: 1px solid var(--main-blue-color);
+}
+.praicing-section .container .praic-container .praic-box .header h4{
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.praicing-section .container .praic-container .praic-box .header p {
+      font-size: 60px;
+    font-weight: bolder;
+    position: relative;
+}
+.praicing-section .container .praic-container .praic-box .header p::before {
+      content: attr(data-praice1);
+      position: absolute;
+      font-size: 25px;
+      top: -10px;
+      left: 73px;
+      font-weight: normal;
+}
+.praicing-section .container .praic-container .praic-box .header p::after {
+      content: attr(data-praice2);
+      position: absolute;
+      font-size: 25px;
+      bottom: 0;
+      right: 35px;
+}
+.praicing-section .container .praic-container .praic-box ul {
+border-bottom: 1px solid var(--main-blue-color);
+}
+.praicing-section .container .praic-container .praic-box ul li {
+      padding: 20px;
+      text-transform: capitalize;
+      position: relative;
+}
+.praicing-section .container .praic-container .praic-box ul li:not(:last-child)::after{
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      background-color: var(--main-blue-color);
+      bottom: 0;
+      left: 25%;
+}
+.praicing-section .container .praic-container .praic-box .footer {
+      padding: 50px;
+}
+.praicing-section .container .praic-container .praic-box .footer button {
+      background-color: transparent;
+      border: 1px solid var(--main-blue-color);
+      padding: 20px;
+      text-transform: capitalize;
+      color: #5002bc;
+}
+/* End Praicing section  */
