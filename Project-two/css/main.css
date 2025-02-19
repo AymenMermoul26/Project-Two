@@ -541,7 +541,7 @@ text-transform: capitalize;
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #00000096;
+      background-color: #000000bd;
       left: 0;
       top: 0;
 }
@@ -583,9 +583,192 @@ text-transform: capitalize;
     align-items: center;
 }
 .stats .container .box h1 {
-          font-size: 40px;
+      font-size: 40px;
 }
 .stats .container .box p {
-          font-size: 14px;
+      font-size: 14px;
 }
 /* End Stats Section  */
+
+/* Start My Skills Section  */
+.my-skills .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+}
+@media (min-width: 992px){
+      .my-skills .container >div {
+            flex-basis: 45%;
+      }
+}
+
+.my-skills .container >div> h1 {
+      font-size: 17px;
+      text-align: center;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+}
+.my-skills .container >div >p{
+      text-align: center;
+      line-height: 2;
+      margin-bottom: 30px;
+      color: #777;
+}
+
+.my-skills .container .testimonials .testi-content {
+      display: flex;
+      margin-bottom: 40px;
+      align-items: center;
+}
+
+.my-skills .container .testimonials .testi-content img {
+      margin-right: 50px;
+      width: 100px;
+      border-radius: 50%;
+}
+@media(max-width:767px){
+      .my-skills .container .testimonials .testi-content {
+            flex-direction: column;
+            text-align: center;
+      }
+      .my-skills .container .testimonials .testi-content img {
+            margin: 0 auto 30px;
+      }
+}
+.my-skills .container .testimonials .testi-content .testi-text{
+      line-height: 1.8;
+      border-bottom: 1px solid #777;
+}
+
+
+.my-skills .container .testimonials .testi-content .testi-text p{
+      color: #777;
+      margin-bottom: 10px;
+      text-align: right;
+      text-transform: capitalize;
+}
+.my-skills .container .testimonials .testi-content .testi-text p> span {
+      text-transform: uppercase;
+}
+
+.my-skills .container .testimonials ul {
+      display: flex;
+      justify-content: center;
+      margin: 50px 0;
+}
+.my-skills .container .testimonials ul li {
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: 1px solid #777;
+
+}
+.my-skills .container .testimonials ul li:nth-child(2) {
+      background-color: var(--main-blue-color);
+      border: 1px solid var(--main-blue-color);
+      margin: 0 5px;
+}
+.my-skills .container .skills .box {
+      margin-bottom: 35px;
+}
+.my-skills .container .skills .box h2 {
+      font-size: 18px;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+}
+.my-skills .container .skills .box .skill {
+      width: 100%;
+      background-color: #eee;
+      height: 35px;
+}
+.my-skills .container .skills .box .skill span {
+ height: 100%;
+    background-color: var(--main-blue-color);
+    display: block;
+    position: relative;
+}
+.my-skills .container .skills .box .skill .nine {
+      width: 90%;
+}
+.my-skills .container .skills .box .skill .nine::before {
+content: '90%';
+position: absolute;
+background-color: #000000;
+color: #fff;
+padding: 3px;
+border-radius: 4px;
+bottom: 125%;
+left: 95%;
+}
+.my-skills .container .skills .box .skill .nine::after {
+content:'';
+position: absolute;
+background-color:transparent;
+height: 0;
+width: 0;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-bottom: 8px solid transparent;
+border-top: 8px solid #000;
+left: 98%;
+top: -10px;
+}
+
+.my-skills .container .skills .box .skill .eight{
+      width: 80%;
+}
+.my-skills .container .skills .box .skill .eight::before {
+      content: '80%';
+      position: absolute;
+      background-color: #000000;
+      color: #fff;
+      padding: 3px;
+      border-radius: 4px;
+      bottom: 125%;
+      left: 95%;
+}
+.my-skills .container .skills .box .skill .eight::after {
+      content: '';
+      position: absolute;
+      background-color: transparent;
+      height: 0;
+      width: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-top: 7px solid #000000;
+      left: 98%;
+      top: -10px;
+}
+.my-skills .container .skills .box .skill .seven {
+      width: 75%;
+}
+.my-skills .container .skills .box .skill .seven::before {
+      content: '75%';
+position: absolute;
+background-color: #000000;
+color: #fff;
+padding: 3px;
+border-radius: 4px;
+bottom: 125%;
+left: 95%;
+}
+
+.my-skills .container .skills .box .skill .seven::after {
+          content: '';
+    position: absolute;
+    background-color: transparent;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-top: 7px solid #000;
+    left: 98%;
+    top: -10px;
+}
+}
+
+/* End My Skills Section  */
