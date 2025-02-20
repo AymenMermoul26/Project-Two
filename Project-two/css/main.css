@@ -900,3 +900,82 @@ background-color: transparent;
       line-height: 1.7;
 }
 /* End Subscripe section  */
+/* Start Contact-Us Section  */
+.contact-us .container .contact-form{
+      display: flex;
+      justify-content: space-between;
+}
+@media (max-width:767px){
+.contact-us .container .contact-form {
+      flex-direction: column;}
+}
+.contact-us .contact-form form{
+      flex-basis: 70%;
+      position: relative;
+}
+
+.contact-us .contact-form form input{
+      display: block;
+      padding: 20px 20px;
+      width: 100%;
+      margin-bottom: 35px;
+      border: 1px solid #d6d6d6;
+}
+.contact-us .contact-form form textarea {
+      display: block;
+      padding: 20px 20px;
+      width: 100%;
+      margin-bottom: 30px;
+      height: 300px;
+      border: 1px solid #d6d6d6;
+
+}
+.contact-us .contact-form form textarea::placeholder{
+      text-transform: capitalize;
+}
+.contact-us .contact-form form input::placeholder {
+      text-transform: capitalize;
+}
+.contact-us .contact-form form input[type="submit"]{
+      width: fit-content;
+      background-color: var(--main-blue-color);
+      color: #fff;
+      text-transform: uppercase;
+      position:absolute;
+      right: 0;
+}
+
+.contact-us .contact-form .contact-text {
+      flex-basis: 25%;
+} 
+
+.contact-us .contact-form .contact-text h4 {
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 18px;
+      margin-bottom: 25px;
+}
+.contact-us .contact-form .contact-text p{
+      color: #777;
+      margin-bottom: 10px;
+}
+.contact-us .contact-form .contact-text .where {
+      margin: 100px 0 30px 0;
+}
+.contact-us .contact-form .contact-text .add {
+      line-height: 2;
+      text-transform: capitalize;
+}
+@media(max-width:767px){
+      .contact-us .contact-form .contact-text .where {
+           margin: 35px 0;
+      }
+}
+@media(max-width:767px){
+      .contact-us .contact-form .contact-text {
+            order: -1;
+            text-align: center;
+            margin-bottom: 30px;
+      }
+}
+/* End Contact-Us Section  */
