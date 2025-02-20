@@ -52,7 +52,7 @@ a {
 /* end Media */
 
 .sections{
-      padding: 60px 0;
+      padding: 100px 0;
 
 }
 
@@ -810,4 +810,93 @@ border-bottom: 1px solid var(--main-blue-color);
       text-transform: capitalize;
       color: #5002bc;
 }
+
+.praicing-section .container .praicing-contact {
+      text-align: center;
+       margin-top: 55px;
+}
+
+.praicing-section .container .praicing-contact p {
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+}
+.praicing-section .container .praicing-contact button {
+    background-color: var(--main-blue-color);
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: capitalize;
+}
 /* End Praicing section  */
+
+/* Start Subscripe section  */
+.sub-section {
+      background-image: url(../images/subscribe.jpg);
+      background-size: cover;
+      position: relative;
+}
+.sub-section::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #00000070;
+      top: 0;
+      left: 0;    
+}
+
+.sub-section .container {
+      position: relative;
+      display: flex;
+      align-items: center;
+}
+@media (max-width:991px) {
+      .sub-section .container{
+            flex-direction: column;
+      }
+}
+.sub-section .container form {
+      display: flex;
+      position: relative;
+      width: 500px;
+      max-width: 100%;
+}
+@media (max-width:991px) {
+      .sub-section .container form{
+            margin-bottom: 40px;
+      }
+}
+.sub-section .container form i {
+      font-size: 25px;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+      left: 20px;
+      color: #fff;
+}
+.sub-section .container form input[type="email"]{
+background-color: transparent;
+    padding: 20px 20px 20px 60px;
+    /* color: #fff; */
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    border-right: 0;
+    width: calc(100% - 130px);
+}
+.sub-section .container form input[type="submit"] {
+      background: var(--main-blue-color);
+      color: #fff;
+      padding: 20px 10px;
+      border: 1px solid #fff;
+      border-left: none;
+      text-transform: uppercase;
+      width: 130px;
+}
+
+.sub-section .container p{
+      margin-left: 50px;
+      color: #fff;
+      line-height: 1.7;
+}
+/* End Subscripe section  */
